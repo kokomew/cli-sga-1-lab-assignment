@@ -1,0 +1,46 @@
+1. Command: uptime
+Output: 18:38:56 up  1:29,  1 user,  load average: 0.00, 0.00, 0.00
+
+2. Command: ps -u mehvish
+Output:     PID TTY          TIME CMD
+    278 pts/0    00:00:00 bash
+    310 ?        00:00:00 systemd
+    311 ?        00:00:00 (sd-pam)
+    322 pts/1    00:00:00 bash
+    590 pts/0    00:00:00 ps
+
+3. Command: top -u mehvish
+Output: (top interface opens showing processes sorted by CPU usage)
+
+4. Command: sleep 300 &
+jobs
+Output: [1] 603
+
+[1]+  Running                 sleep 300 &
+
+5. Command: ps -o pid,ni,cmd -p 603
+renice 10 -p 603
+ps -o pid,ni,cmd -p 603
+Output:     PID  NI CMD
+    603   0 sleep 300
+603 (process ID) old priority 0, new priority 10
+    PID  NI CMD
+    603  10 sleep 300
+
+6. Command: free -h
+Output:                total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       312Mi       3.2Gi       3.0Mi       176Mi       3.3Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+7. Command: df -h ~
+Output: Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.2G  955G   1% /
+
+8. Command: echo $SHELL
+Output: /bin/bash
+
+9. Command: uname -a > system_report.txt
+Output: (no output, file created)
+
+10. Command: ncdu ~
+Output: (ncdu interface opens showing disk usage)

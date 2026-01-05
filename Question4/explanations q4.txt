@@ -1,0 +1,29 @@
+Question 5.1
+The uptime command is used to see how long the system has been running and how busy it currently is.
+
+Question 5.2
+The ps -u mehvish command shows all the processes that are running under my user account.
+
+Question 5.3
+The top -u mehvish command opens a live view of running processes and updates continuously to show CPU usage.
+
+Question 5.4
+The sleep 300 & command runs a process in the background for 300 seconds, and the jobs command confirms that the background process is running.
+
+Question 5.5
+The ps command is used to check the process ID and priority of the background process, and the renice command changes its priority.
+
+Question 5.6
+The free -h command shows how much memory is being used and how much is available in an easy-to-read format.
+
+Question 5.7
+The df -h ~ command displays how much disk space is used and available for the home directory.
+
+Question 5.8
+The echo $SHELL command shows which shell is currently being used in the system.
+
+Question 5.9
+The uname -a command collects system information and saves it into the file system_report.txt.
+
+Question 5.10
+The ncdu command opens an interactive tool that helps check which files and folders are using the most disk space.

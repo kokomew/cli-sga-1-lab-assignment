@@ -1,0 +1,29 @@
+Question 2.1
+mkdir ~/documents creates a new directory named documents inside the home directory to store project files.
+
+Question 2.2
+cd ~/documents changes the current directory to documents, and touch plan.txt creates an empty file named plan.txt inside it.
+
+Question 2.3
+echo writes sample text into plan.txt, adding content to the file.
+
+Question 2.4
+ls -l plan.txt displays detailed information about the file, including permissions, owner, and file size, confirming the file belongs to the user.
+
+Question 2.5
+cp plan.txt plan_copy.txt creates a duplicate of plan.txt named plan_copy.txt.
+
+Question 2.6
+mv documents project_documents renames the documents directory to project_documents to better reflect its purpose.
+
+Question 2.7
+mkdir ~/project_documents/archive creates a subdirectory named archive inside project_documents for storing files.
+
+Question 2.8
+mv ~/project_documents/plan_copy.txt ~/project_documents/archive/ moves plan_copy.txt into the archive directory.
+
+Question 2.9
+ls -R ~/project_documents lists all files and subdirectories recursively, showing the complete directory structure.
+
+Question 2.10
+realpath ~/project_documents/archive/plan_copy.txt displays the absolute path of plan_copy.txt after it has been moved.

@@ -1,0 +1,35 @@
+1. Command: mkdir ~/documents
+Output: (no output, folder created)
+
+2. Command: cd ~/documents
+touch plan.txt
+Output: (no output, file created)
+
+3. Command: echo "This is a sample project note" > plan.txt
+Output: (no output, content written to file)
+
+4. Command: ls -l plan.txt
+Output: -rw-r--r-- 1 mehvish mehvish 30 Jan  5 17:55 plan.txt
+
+5. Command: cp plan.txt plan_copy.txt
+Output: (no output, file copied)
+
+6. Command: cd ~
+mv documents project_documents
+Output: (no output, folder renamed)
+
+7. Command: mkdir ~/project_documents/archive
+Output: (no output, folder created)
+
+8. Command: mv ~/project_documents/plan_copy.txt ~/project_documents/archive/
+Output: (no output, file moved)
+
+9. Command: ls -R ~/project_documents
+Output: /home/mehvish/project_documents:
+archive  plan.txt
+
+/home/mehvish/project_documents/archive:
+plan_copy.txt
+
+10. Command: realpath ~/project_documents/archive/plan_copy.txt
+Output: /home/mehvish/project_documents/archive/plan_copy.txt

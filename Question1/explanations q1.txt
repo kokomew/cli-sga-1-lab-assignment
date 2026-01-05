@@ -1,0 +1,32 @@
+Question 1.1
+whoami shows the username of the currently logged-in user, confirming who is using the system.
+groups lists all the groups the user belongs to, showing the permissions and roles assigned.
+
+Question 1.2
+pwd displays the current working directory, indicating the location in the filesystem.
+ls -l lists all files and directories in the current location with details such as permissions, owner, and size.
+
+Question 1.3
+echo "Linux user environment verified" > user_info.txt creates a file named user_info.txt and writes a message to confirm the Linux environment is set up.
+
+Question 1.4
+wc -c user_info.txt counts the number of characters in user_info.txt to verify the contents of the file.
+
+Question 1.5
+man mkdir opens the manual page for mkdir. The option -p is useful because it allows creating parent directories automatically if they do not exist.
+
+Question 1.6
+ls ~ | sort lists all files in the home directory in alphabetical order for easy inspection.
+
+Question 1.7
+grep "admin" log.txt searches for the word admin in log.txt and displays only the matching lines.
+
+Question 1.8
+uname -r displays the Linux kernel version currently running on the system.
+
+Question 1.9
+ping -c 4 www.google.com
+ sends packets to Google to check that the system has an active internet connection.
+
+Question 1.10
+uptime shows how long the system has been running, the number of users logged in, and the system load average.

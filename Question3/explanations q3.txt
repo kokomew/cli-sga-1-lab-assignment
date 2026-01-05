@@ -1,0 +1,29 @@
+Question 3.1
+The echo command creates the file sample_data.txt in the home directory and writes sample text into it.
+
+Question 3.2
+The ln command creates a hard link named sample_hard.txt that points to the same data as sample_data.txt.
+
+Question 3.3
+The ln -s command creates a symbolic link named sample_soft.txt that points to sample_data.txt.
+
+Question 3.4
+The ls -i command displays the inode numbers of the files. sample_data.txt and sample_hard.txt share the same inode number, while sample_soft.txt has a different inode number.
+
+Question 3.5
+sample_data.txt and sample_hard.txt share the same inode number because a hard link points to the same inode and data on disk. The symbolic link has a different inode because it only stores the path to the original file.
+
+Question 3.6
+The ls -l command displays detailed information about sample_data.txt, including permissions, ownership, file size, and timestamps.
+
+Question 3.7
+The du -sh command shows the total disk usage of the home directory in a human-readable format.
+
+Question 3.8
+The ls -lh command displays the size of each file in the home directory in a human-readable format.
+
+Question 3.9
+The rm command deletes the symbolic link, and listing the original file confirms that sample_data.txt is not affected.
+
+Question 3.10
+The du -h command shows disk usage for directories and files, while df -h displays overall filesystem disk space usage in a human-readable format.

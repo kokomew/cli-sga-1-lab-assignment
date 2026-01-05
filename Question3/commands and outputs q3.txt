@@ -1,0 +1,61 @@
+1. Command: echo "This is sample text" > ~/sample_data.txt
+Output: (no output, file created)
+
+2. Command: ln ~/sample_data.txt ~/sample_hard.txt
+Output: (no output, hard link created)
+
+3. Command: ln -s ~/sample_data.txt ~/sample_soft.txt
+Output: (no output, symbolic link created)
+
+4. Command: ls -i ~/sample_data.txt ~/sample_hard.txt ~/sample_soft.txt
+Output: 50608 /home/mehvish/sample_data.txt  50608 /home/mehvish/sample_hard.txt  50609 /home/mehvish/sample_soft.txt
+
+5. No command 
+
+6. Command: ls -l ~/sample_data.txt
+Output: -rw-r--r-- 2 mehvish mehvish 20 Jan  5 18:08 /home/mehvish/sample_data.txt
+
+7. Command: du -sh ~
+Output: 60K     /home/mehvish
+
+8. Command: ls -lh ~
+Output: total 28K
+drwxr-xr-x 2 mehvish mehvish 4.0K Jan  5 17:15 cd
+drwxr-xr-x 2 mehvish mehvish 4.0K Jan  5 17:18 linux_lab
+-rw-r--r-- 1 mehvish mehvish   75 Jan  5 17:37 log.txt
+drwxr-xr-x 3 mehvish mehvish 4.0K Jan  5 17:58 project_documents
+-rw-r--r-- 2 mehvish mehvish   20 Jan  5 18:08 sample_data.txt
+-rw-r--r-- 2 mehvish mehvish   20 Jan  5 18:08 sample_hard.txt
+lrwxrwxrwx 1 mehvish mehvish   29 Jan  5 18:10 sample_soft.txt -> /home/mehvish/sample_data.txt
+-rw-r--r-- 1 mehvish mehvish   32 Jan  5 17:31 user_info.txt
+
+9. Command: rm ~/sample_soft.txt
+ls ~/sample_data.txt
+Output: /home/mehvish/sample_data.txt
+
+10. Command: du -h ~
+df -h
+Output: 
+4.0K    /home/mehvish/cd
+8.0K    /home/mehvish/project_documents/archive
+16K     /home/mehvish/project_documents
+4.0K    /home/mehvish/.cache
+4.0K    /home/mehvish/linux_lab
+60K     /home/Mehvish
+
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         238G  142G   96G  60% /usr/lib/wsl/drivers
+/dev/sdd       1007G  1.2G  955G   1% /
+none            1.9G   92K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  2.7M  1.9G   1% /init
+none            1.9G  484K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G     0  1.9G   0% /run/shm
+none            1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\             238G  142G   96G  60% /mnt/c
+tmpfs           374M  8.0K  374M   1% /run/user/1000
+ 
